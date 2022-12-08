@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    About Page
+{% endblock %}
+
+{% block content %}
+<div class="banner" id="page">
+    <div class="left-col">
+        <h2>{SOFTWARE ENGINEER}</h2>
+    </div>
+    <div class="right-col">
+        <img id="pic" src="{{ url_for('static', filename='images/vinta.jpeg') }}" alt="Picture of retro pc"/>
+    </div>
+  </div>
+<div class="left">
+    <h3 id="about">ABOUT_ME()</h3>
+    <p>Hello, my name is Kudzayi, I am a self-taught software engineer and I love to code! I have a keen interest in iOs development with proficiency in Swift, Python and Java.
+        My goal is to keep learning and working on projects to become a competent software developer with the ability to create and contribute to impactful tech projects. I see my long-term contribution in the tech space
+        to largely center on the transformation of lives back in my home country of Zimbabwe.
+    </p>
+    <br>
+    <p>I would describe myself as a curious information seeker - I love innovative ideas, laughter and conversations
+        with people. I am currently in the job market and open to opportunities or to just get to know other developers! You can connect with me on
+        <a href="https://www.linkedin.com/in/kudzayi-bamhare-3b6991b7/">LINKEDIN</a> or via email on: <p style="font-style: italic;">kudzayibamhare@gmail.com</p>
+    </p>
+    <p style="font-style: italic;">"Humans are creative beings and our creative potential is limitless, we should
+        always feel limitless"</p>
+</div>
+  <div class="right-col">
+      <img src="{{ url_for('static', filename='images/me.JPG') }}" alt="Picture of Kudzayi"/>
+  </div>
+{% endblock %}

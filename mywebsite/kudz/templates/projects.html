@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block content %}
+<div class="banner" id="page">
+  <div class="left-col">
+    <h2>{SOFTWARE ENGINEER}</h2>
+  </div>
+  <div class="right-col">
+    <img id="pic" src="{{ url_for('static', filename='images/project.jpeg') }}" alt="Picture of person working"/>
+  </div>
+</div>
+<div class="left">
+  <h3 id="project">PROJECTS()</h3>
+  <h4>NETFLIX PAGE - Html & CSS </h4>
+  <ul>
+    <li>A static replica of Netflix.com's home page</li>
+    <li>Mimics responsive UX design of Netflix's website.</li>
+    <li>Created entirely using html and css</li>
+  </ul>
+</div>
+<div class="right-col">
+  <a href="https://kudzmat.github.io/Netflix/">
+    <img class="grow" src="{{ url_for('static', filename='images/projPics3.png') }}" alt="Netflix project screenshot"/>
+  </a>
+</div>
+  <br>
+<div class="left">
+  <h4>Vinyl Store - Python, Html CSS </h4>
+  <ul>
+    <li>The Vinyl Store is a website I developed with Flask, Python's web framework</li>
+    <li>The app makes use of Spotify's Api to access their vast licensed music library</li>
+    <li>Allows user to search for their favourite artists and albums</li>
+    <li>View artist information, album information and top songs </li>
+    <li>Allows user to stream music previews</li>
+    <li>Allows users to enter their favourite artists and receive a custom playlist</li>
+  </ul>
+</div>
+<div class="right-col">
+  <a href="https://github.com/Kudzmat/The-Vinyl-Store">
+    <img class="grow" src="{{ url_for('static', filename='images/projPics.png') }}" alt="Vinyl store project thumbnail"/>
+  </a>
+</div>
+<br>
+<div class="left">
+  <h4>Tipsy App - Swift </h4>
+  <ul>
+    <li>iOS app built for helping friends calculate bill splits to avoid awkward moments</li>
+    <li>The user just enters the total bill and how many people are splitting the bill</li>
+    <li>The app allows users to select how much tip they would like to include</li>
+  </ul>
+</div>
+<div class="right-col">
+  <a href="https://github.com/Kudzmat/Tipsy-App">
+      <img class="grow" src="{{ url_for('static', filename='images/projPics2.png') }}" alt="Tipsy App thumbnail"/>
+  </a>
+</div>
+<h3>/*CHECK OUT MY <a href="https://github.com/Kudzmat">GITHUB</a> PROFILE TO SEE MORE OF MY WORK*/</h3>
+{% endblock %}
